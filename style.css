@@ -929,6 +929,7 @@ aside {
   max-width: 396px;
   height: 100vh;
   min-height: 100%;
+  overflow: hidden;
   overflow-y: scroll;
   position: fixed;
   top: 0;
@@ -943,11 +944,11 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  /* line 34, sass/sass-parts/layout/_sidebar.scss */
+  /* line 35, sass/sass-parts/layout/_sidebar.scss */
   aside footer {
     display: block; }
 
-/* line 39, sass/sass-parts/layout/_sidebar.scss */
+/* line 40, sass/sass-parts/layout/_sidebar.scss */
 #logo {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -959,12 +960,12 @@ aside {
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  /* line 46, sass/sass-parts/layout/_sidebar.scss */
+  /* line 47, sass/sass-parts/layout/_sidebar.scss */
   #logo img {
     display: inline-block;
     margin: 0 1.8rem; }
 
-/* line 52, sass/sass-parts/layout/_sidebar.scss */
+/* line 53, sass/sass-parts/layout/_sidebar.scss */
 nav {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -978,7 +979,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  /* line 57, sass/sass-parts/layout/_sidebar.scss */
+  /* line 58, sass/sass-parts/layout/_sidebar.scss */
   nav ul {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -991,7 +992,7 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  /* line 63, sass/sass-parts/layout/_sidebar.scss */
+  /* line 64, sass/sass-parts/layout/_sidebar.scss */
   nav li {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -1004,15 +1005,15 @@ nav {
     width: 100%;
     z-index: 10;
     margin-bottom: -1px; }
-    /* line 73, sass/sass-parts/layout/_sidebar.scss */
+    /* line 74, sass/sass-parts/layout/_sidebar.scss */
     nav li:hover {
       z-index: 15; }
-  /* line 77, sass/sass-parts/layout/_sidebar.scss */
+  /* line 78, sass/sass-parts/layout/_sidebar.scss */
   nav img {
     display: none;
     opacity: .6;
     margin: 0 auto; }
-  /* line 82, sass/sass-parts/layout/_sidebar.scss */
+  /* line 83, sass/sass-parts/layout/_sidebar.scss */
   nav a, nav span {
     width: 100%;
     display: block;
@@ -1020,27 +1021,27 @@ nav {
     border: 1px solid transparent;
     border-left-width: 0;
     border-right-width: 0; }
-  /* line 91, sass/sass-parts/layout/_sidebar.scss */
+  /* line 92, sass/sass-parts/layout/_sidebar.scss */
   nav a:hover {
     background-color: rgba(244, 0, 0, 0.18);
     border-color: rgba(244, 0, 0, 0.4); }
-    /* line 94, sass/sass-parts/layout/_sidebar.scss */
+    /* line 95, sass/sass-parts/layout/_sidebar.scss */
     nav a:hover img {
       opacity: 1; }
-  /* line 99, sass/sass-parts/layout/_sidebar.scss */
+  /* line 100, sass/sass-parts/layout/_sidebar.scss */
   nav span h5 {
     color: #F40000; }
 
 @media only screen and (max-width: 1056px) {
-  /* line 107, sass/sass-parts/layout/_sidebar.scss */
+  /* line 108, sass/sass-parts/layout/_sidebar.scss */
   footer {
     display: block; }
-  /* line 111, sass/sass-parts/layout/_sidebar.scss */
+  /* line 112, sass/sass-parts/layout/_sidebar.scss */
   aside {
     max-width: none;
     height: auto;
     min-height: none;
-    overflow-y: auto;
+    overflow-y: hidden;
     position: relative;
     background-color: transparent;
     display: -webkit-box;
@@ -1050,18 +1051,18 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    /* line 123, sass/sass-parts/layout/_sidebar.scss */
+    /* line 124, sass/sass-parts/layout/_sidebar.scss */
     aside footer {
       display: none; }
-  /* line 129, sass/sass-parts/layout/_sidebar.scss */
+  /* line 130, sass/sass-parts/layout/_sidebar.scss */
   nav h1, nav h2, nav h3, nav h4, nav h5, nav h6, nav p {
     margin-bottom: 0;
     display: block;
     text-align: center; }
-  /* line 134, sass/sass-parts/layout/_sidebar.scss */
+  /* line 135, sass/sass-parts/layout/_sidebar.scss */
   nav h5, nav h6 {
     display: none; }
-  /* line 137, sass/sass-parts/layout/_sidebar.scss */
+  /* line 138, sass/sass-parts/layout/_sidebar.scss */
   nav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1069,19 +1070,19 @@ nav {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  /* line 141, sass/sass-parts/layout/_sidebar.scss */
+  /* line 142, sass/sass-parts/layout/_sidebar.scss */
   nav li {
     width: auto;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
-  /* line 145, sass/sass-parts/layout/_sidebar.scss */
+  /* line 146, sass/sass-parts/layout/_sidebar.scss */
   nav img {
     display: block; }
-  /* line 150, sass/sass-parts/layout/_sidebar.scss */
+  /* line 151, sass/sass-parts/layout/_sidebar.scss */
   #logo {
     margin: 3rem 0 1.2rem 0; }
-    /* line 152, sass/sass-parts/layout/_sidebar.scss */
+    /* line 153, sass/sass-parts/layout/_sidebar.scss */
     #logo img {
       width: 80px;
       height: 86px; } }
