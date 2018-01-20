@@ -991,8 +991,11 @@ nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-  /* line 64, sass/sass-parts/layout/_sidebar.scss */
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  /* line 65, sass/sass-parts/layout/_sidebar.scss */
   nav li {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -1000,20 +1003,21 @@ nav {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     list-style: none;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: relative;
-    width: 100%;
     z-index: 10;
     margin-bottom: -1px; }
-    /* line 74, sass/sass-parts/layout/_sidebar.scss */
+    /* line 75, sass/sass-parts/layout/_sidebar.scss */
     nav li:hover {
       z-index: 15; }
-  /* line 78, sass/sass-parts/layout/_sidebar.scss */
+  /* line 79, sass/sass-parts/layout/_sidebar.scss */
   nav img {
     display: none;
     opacity: .6;
     margin: 0 auto; }
-  /* line 83, sass/sass-parts/layout/_sidebar.scss */
+  /* line 84, sass/sass-parts/layout/_sidebar.scss */
   nav a, nav span {
     width: 100%;
     display: block;
@@ -1021,22 +1025,22 @@ nav {
     border: 1px solid transparent;
     border-left-width: 0;
     border-right-width: 0; }
-  /* line 92, sass/sass-parts/layout/_sidebar.scss */
+  /* line 93, sass/sass-parts/layout/_sidebar.scss */
   nav a:hover {
     background-color: rgba(244, 0, 0, 0.18);
     border-color: rgba(244, 0, 0, 0.4); }
-    /* line 95, sass/sass-parts/layout/_sidebar.scss */
+    /* line 96, sass/sass-parts/layout/_sidebar.scss */
     nav a:hover img {
       opacity: 1; }
-  /* line 100, sass/sass-parts/layout/_sidebar.scss */
+  /* line 101, sass/sass-parts/layout/_sidebar.scss */
   nav span h5 {
     color: #F40000; }
 
 @media only screen and (max-width: 1056px) {
-  /* line 108, sass/sass-parts/layout/_sidebar.scss */
+  /* line 109, sass/sass-parts/layout/_sidebar.scss */
   footer {
     display: block; }
-  /* line 112, sass/sass-parts/layout/_sidebar.scss */
+  /* line 113, sass/sass-parts/layout/_sidebar.scss */
   aside {
     max-width: none;
     height: auto;
@@ -1051,18 +1055,18 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    /* line 124, sass/sass-parts/layout/_sidebar.scss */
+    /* line 125, sass/sass-parts/layout/_sidebar.scss */
     aside footer {
       display: none; }
-  /* line 130, sass/sass-parts/layout/_sidebar.scss */
+  /* line 131, sass/sass-parts/layout/_sidebar.scss */
   nav h1, nav h2, nav h3, nav h4, nav h5, nav h6, nav p {
     margin-bottom: 0;
     display: block;
     text-align: center; }
-  /* line 135, sass/sass-parts/layout/_sidebar.scss */
+  /* line 136, sass/sass-parts/layout/_sidebar.scss */
   nav h5, nav h6 {
     display: none; }
-  /* line 138, sass/sass-parts/layout/_sidebar.scss */
+  /* line 139, sass/sass-parts/layout/_sidebar.scss */
   nav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1070,19 +1074,22 @@ nav {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  /* line 142, sass/sass-parts/layout/_sidebar.scss */
+  /* line 143, sass/sass-parts/layout/_sidebar.scss */
   nav li {
     width: auto;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
-  /* line 146, sass/sass-parts/layout/_sidebar.scss */
+  /* line 147, sass/sass-parts/layout/_sidebar.scss */
   nav img {
     display: block; }
-  /* line 151, sass/sass-parts/layout/_sidebar.scss */
+  /* line 150, sass/sass-parts/layout/_sidebar.scss */
+  nav a, nav span {
+    padding: 1.8rem 0; }
+  /* line 155, sass/sass-parts/layout/_sidebar.scss */
   #logo {
     margin: 3rem 0 1.2rem 0; }
-    /* line 153, sass/sass-parts/layout/_sidebar.scss */
+    /* line 157, sass/sass-parts/layout/_sidebar.scss */
     #logo img {
       width: 80px;
       height: 86px; } }
@@ -1712,99 +1719,5 @@ $ten:       83.33%;
 $eleven:    91.66%;
 $twelve:    100%;
 */
-/*
-// Column Width Value [ MOVING TO CSS GRID ]
-$one:       8.33%;
-$two:       16.66%;
-$three:     25%;
-$four:      33.33%;
-$five:      41.66%;
-$six:       50%;
-$seven:     58.33%;
-$eight:     66.66%;
-$nine:      75%;
-$ten:       83.33%;
-$eleven:    91.66%;
-$twelve:    100%;
-*/
-/*
-// Column Width Value [ MOVING TO CSS GRID ]
-$one:       8.33%;
-$two:       16.66%;
-$three:     25%;
-$four:      33.33%;
-$five:      41.66%;
-$six:       50%;
-$seven:     58.33%;
-$eight:     66.66%;
-$nine:      75%;
-$ten:       83.33%;
-$eleven:    91.66%;
-$twelve:    100%;
-*/
-/*
-// Column Width Value [ MOVING TO CSS GRID ]
-$one:       8.33%;
-$two:       16.66%;
-$three:     25%;
-$four:      33.33%;
-$five:      41.66%;
-$six:       50%;
-$seven:     58.33%;
-$eight:     66.66%;
-$nine:      75%;
-$ten:       83.33%;
-$eleven:    91.66%;
-$twelve:    100%;
-*/
-/*
-// Column Width Value [ MOVING TO CSS GRID ]
-$one:       8.33%;
-$two:       16.66%;
-$three:     25%;
-$four:      33.33%;
-$five:      41.66%;
-$six:       50%;
-$seven:     58.33%;
-$eight:     66.66%;
-$nine:      75%;
-$ten:       83.33%;
-$eleven:    91.66%;
-$twelve:    100%;
-*/
-/* line 15, sass/sass-parts/pages/_styleguide.scss */
-#styleguide header {
-  padding: 12rem 0; }
-
-/* line 20, sass/sass-parts/pages/_styleguide.scss */
-#demo hr {
-  margin: 3.6rem 0;
-  border-color: #BD1717;
-  opacity: .3; }
-
-/* line 25, sass/sass-parts/pages/_styleguide.scss */
-#demo .demoSubtitle {
-  opacity: .6;
-  margin-top: 3.6rem !important; }
-  /* line 28, sass/sass-parts/pages/_styleguide.scss */
-  #demo .demoSubtitle:first-of-type {
-    margin-top: 0 !important; }
-
-/* line 31, sass/sass-parts/pages/_styleguide.scss */
-#demoGrid {
-  margin: 6rem auto; }
-  /* line 33, sass/sass-parts/pages/_styleguide.scss */
-  #demoGrid .row, #demoGrid .container, #demoGrid .col {
-    background-color: rgba(244, 0, 0, 0.12); }
-  /* line 36, sass/sass-parts/pages/_styleguide.scss */
-  #demoGrid .row {
-    margin-top: 3rem;
-    margin-bottom: 3rem; }
-  /* line 42, sass/sass-parts/pages/_styleguide.scss */
-  #demoGrid .col span {
-    width: 100%;
-    height: 100%;
-    min-height: 3rem;
-    display: block; }
 
 /*# sourceMappingURL=style.css.map */
